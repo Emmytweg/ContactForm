@@ -193,10 +193,12 @@ outline:1.5px solid #0C7D69;
     .gEnquiry-2{
         margin-top: 10px;
     }
+ .gEnquiry-2, .gEnquiry .gEnquiry-1{
+        width: 320px;
+    }
     .firstBlock input,
-.emailAddress input,.gEnquiry-2, .gEnquiry .gEnquiry-1{
-   width: 320px;
-}
+.emailAddress input{
+   width: 250px;
 .lastname{
     margin-top: 5px;
 }
