@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="">
+         <div class="firstBlock">
+           <div class="firstName">
+            <label>First Name <span>*</span></label><br>
+            <input type="text"  id="nameInput" >
+            <div id="firstNameError" class="error"></div>
+           </div>
+           <div class="lastname">
+            <label for="lastName">Last Name <span>*</span></label><br>
+            <input type="text" id="nameInput" >
+            <div class="error" id="lastNameError"></div>
+           </div>
+         </div>
+         <div class="emailAddress">
+            <label for="lastName">Email Address<span>*</span></label><br>
+            <input type="text" >
+            <div class="error" id="emailError"></div>
+         </div><br>
+         <div class="queryType">
+            Query Type <span>*</span>
+            <div class="gEnquiry">
+               <div class="gEnquiry-1">
+                <input type="radio" name="option" id="generalEnqiryInput" > 
+                <span>Genral Enquiry</span>
+                <!-- <label for="">General Enquiry</label> -->
+               </div>
+                <div class="gEnquiry-2">
+                    <input type="radio" name="option" id="" > 
+                    <span>Support Me</span>
+                <!-- <label for="">Support Request</label> -->
+                </div>
+            </div>
+            <div id="quryError" class="error"></div>
+         </div> <br>
+        <div class="msg">
+            <label for="">Message <span>*</span></label><br>
+            <textarea name="" id=""></textarea>
+            <div id="msgError" class="error"></div>
+         </div><br><br>
+         <div class="capcha">
+            <input type="checkbox" name="" id="capchaInput" >
+            I consent to being contacted by the team <span>*</span>
+            <div id="capchaError" class="error"></div>
+         </div>
+         
+         <br>
+         <div class="">
+            <button class="btn" type="submit" name="Submit" id="submitBtn"> Submit </button>
+         </div>
+        </form>
+      
+    </div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

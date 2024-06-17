@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+/* ### Primary
+
+- Green 200 (lighter): hsl(148, 38%, 91%)
+- Green 600 (medium): hsl(169, 82%, 27%)
+- Red: hsl(0, 66%, 54%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey 500 (medium): hsl(186, 15%, 59%)
+- Grey 900 (darker): hsl(187, 24%, 22%) */
+body{
+    background-color:hsl(148, 38%, 91%);
+    padding: 2%;
+    font-family: "Karla", sans-serif;
+}
+/* .karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 40% ;
+    height: 50%;
+    padding: 2% 2.5%;
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   margin: auto;
+   justify-content: space-around;
+    border-radius: 10px;
+}
+form{
+    font-weight: 600;
+    font-size: 16px;
+    color: hsl(186, 15%, 59%);
+
+}
+span{
+    color:   hsl(169, 82%, 27%)
+    ;
+}
+.container h1{
+    font-weight: 800;
+
+    }
+form .firstBlock {
+display: flex;
+font-size: 16px;
+justify-content: space-between ;
+align-items: center;
+flex-wrap: wrap;
+max-width:100% ;
+width: 100%;
+margin-bottom: 20px;
+
+}
+
+.firstBlock input,
+.emailAddress input{
+    height: 30px;
+    width: 100%;
+    border-radius: 6px ;
+    margin-top: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    cursor: pointer;
+
+}
+.queryType {
+width: 100%;
+}
+.gEnquiry{
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-top: 5px;
+}
+.gEnquiry span{
+    color: hsl(186, 15%, 59%);
+    margin-left: 9px;
+    font-size: 16px;
+}
+.gEnquiry-1{
+    margin-right: 20px;
+}
+.gEnquiry .gEnquiry-1, 
+.gEnquiry-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width:50% ;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 6px;
+    text-align: center;
+    background-color: transparent;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.gEnquiry .gEnquiry-1 input[type= 'radio'], .gEnquiry .gEnquiry-2 input[type= 'radio']{
+    /* margin-left:-50px ; */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0C7D69;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+.firstBlock input:focus, .emailAddress input:focus,textarea:focus, .gEnquiry-1:hover, .gEnquiry-2:hover {
+outline:1.5px solid #0C7D69;
+}
+.gEnquiry-1 input[type= 'radio']:checked, .gEnquiry .gEnquiry-2 input[type= 'radio']:checked
+{
+   border-color: #0C7D69
+}
+
+
+   .gEnquiry-1 input[type= 'radio']:checked::before, .gEnquiry .gEnquiry-2 input[type= 'radio']:checked::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #0C7D69;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+.msg textarea{
+    height: 50px;
+    
+    width: 100%;
+    cursor: pointer;
+
+    border-radius: 6px ;
+    margin-top: 5px;
+    border: 1px solid hsl(186, 15%, 59%);}
+.capcha input[type='checkbox']{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.btn {
+    width: 100%;
+    height: 50px;
+    font-weight: 600px;
+    color: #fff;
+    background-color: #0C7D69;
+    border-radius: 7px;
+    border-color: none;
+    cursor: pointer;
+
+}
+.btn input:hover{
+    background-color: #063F36;
+}
+.error{
+    color: red;
+}
+
+/* Media Screen */
+@media screen and (max-width:680px) {
+
+    body{
+        overflow-y:scroll
+    }
+    .container{
+    width: 70%;
+    padding: 0 10px;
+    }
+    .form .firstBlock{
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .gEnquiry{
+        flex-wrap: wrap;
+       
+    }
+    .gEnquiry .gEnquiry-1{
+        margin: 0;
+    }
+    .gEnquiry-2{
+        margin-top: 10px;
+    }
+    .firstBlock input,
+.emailAddress input,.gEnquiry-2, .gEnquiry .gEnquiry-1{
+   width: 320px;
+}
+.lastname{
+    margin-top: 5px;
+}
+
+
+
+}
