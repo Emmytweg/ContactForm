@@ -150,7 +150,7 @@ outline:1.5px solid #0C7D69;
     cursor: pointer;
 
 }
-.btn {
+.btn  {
     width: 100%;
     height: 50px;
     font-weight: 600px;
@@ -160,6 +160,10 @@ outline:1.5px solid #0C7D69;
     border-color: none;
     cursor: pointer;
 
+}
+a{
+    color: #fff;
+    text-decoration: none;
 }
 .btn input:hover{
     background-color: #063F36;
@@ -193,12 +197,13 @@ outline:1.5px solid #0C7D69;
     .gEnquiry-2{
         margin-top: 10px;
     }
- .gEnquiry-2, .gEnquiry .gEnquiry-1{
+    .gEnquiry-2, .gEnquiry .gEnquiry-1{
         width: 320px;
     }
     .firstBlock input,
 .emailAddress input{
    width: 250px;
+}
 .lastname{
     margin-top: 5px;
 }
